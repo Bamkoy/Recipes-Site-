@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Tacos Recipe</title>
+     <style>
+      body {
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+   font-family: dancing script, cursive;
+    background-image: url('../images/photo1.jpeg');
+    background-size: auto;
+    background-position: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* Add a semi-transparent overlay so text is readable */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: url('../images/jj-ying-7JX0-bfiuxQ-unsplash.jpg') no-repeat center center;
+   /* background-color: rgba(0, 0, 0, 0.4);  0, 0, 0, 0.5 Dark overlay */
+    /* OR use: rgba(255, 255, 255, 0.7); for light overlay */
+    z-index: -1;
+}
+h1, h2, li {
+    
+    color: #000;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: white; /* Adjust based on overlay */
+}
+    </style>
+</head>
+<body>
+    <h1>Tacos Recipe <br>Ingredient/ Procedure</h1>
+    <section>
+       <div class="ingredients-content">
+         <h2>Ingredients:</h2>
+        <ul>
+            <li>1 lb ground beef</li>
+            <li>1 packet taco seasoning</li>
+            <li>8 small flour tortillas</li>
+            <li>1 cup shredded lettuce</li>
+            <li>1 cup diced tomatoes</li>
+            <li>1 cup shredded cheddar cheese</li>
+            <li>1/2 cup sour cream</li>
+            <li>1/2 cup salsa</li>
+        </ul>
+       </div>
+
+        <div class="procedure-content">
+            <h2>Procedure:</h2>
+        <ol>
+            <li>In a skillet, cook the ground beef over medium heat until browned. <br> Drain excess fat.</li>
+            <li>Add the taco seasoning and water according to the packet instructions. <br> Simmer for 5 minutes.</li>
+            <li>Warm the tortillas in a dry skillet or microwave.</li>
+            <li>Assemble the tacos by filling each tortilla with the cooked beef, lettuce, <br> tomatoes, cheese, sour cream, and salsa.</li>
+            <li>Serve immediately and enjoy!</li>
+        </ol>
+        </div>
+    </section>
+</body>
+</html>
